@@ -1,39 +1,70 @@
-# Submission – Project Development Assignment
+# Submission Document
 
-## 1. Tool I Used
-I used StarUML to create the UML class diagram and generate the initial Python code.  
-I used VS Code to open, edit, and run the Python files.  
-I also used ChatGPT (AI) to fix errors and help me complete the missing logic.
+**Student:** Isha Neupane  
+**Course:** Software Engineering  
+**Project:** Similar Assignment Checker  
 
-## 2. Difficulties I Faced
-- At first, I didn’t know how to draw relationships in StarUML.
-- StarUML generated Java files, so I had to install the Python code generator.
-- I had import errors in Python until I placed all files in the same folder.
-- I did not know how to upload to GitHub correctly and needed guidance.
-- Some generated functions were empty, so I had to write the logic myself.
+---
 
-## 3. Accuracy of the Generated Code
-The generated code was only basic structure.  
-It created:
-- classes
-- attributes
-- empty methods
+## 1. Tools Used
+- **StarUML** – Created UML class diagram and use case diagram  
+- **StarUML Code Generation** – Generated initial Python class files  
+- **VS Code** – Edited and ran the code  
+- **Git & GitHub (CLI only)** – Version control and upload  
 
-But it did not generate real logic.  
-I had to write the similarity calculation, assignment objects, and main program manually.
+---
 
-## 4. Remaining Work Needed
-To make the project a complete Version 1, it still needs:
-- better similarity algorithm
-- reading assignment files from a folder
-- printing a full report
-- exception handling
-- more testing
+## 2. UML to Code (Task 1)
 
-## 5. GitHub Upload
-I uploaded all generated and modified Python files to my Github repository:
+### **Step 1: Class Diagram**
+- Created `SystemDesign.uml` with classes: Assignment, AssignmentRepository, SimilarityEngine, ReportGenerator, MainApp
+
+### **Step 2: Code Generation Tool**
+- Used StarUML → Python code generation
+
+### **Step 3: Settings**
+- Target Language: Python  
+- Output Folder: `src/`  
+- Screenshot taken of the configuration window
+
+### **Step 4: Generated Code**
+- StarUML produced Python class stubs for all UML classes  
+- Verified generated `.py` files inside `src/`
+
+### **Step 5: Modifications**
+- Added actual logic in several files  
+- Fixed imports  
+- Ensured every class runs correctly
+
+### **Step 6: Run the Code**
+- Executed using: `python main.py`  
+- Program runs successfully
+
+### **Step 7: Reflection**
+StarUML correctly generated class structures and imports, but I still had to write the logic myself.  
+Most methods were empty, so I completed them manually.  
+Using UML helped keep the design organized and consistent.
+
+---
+
+## 3. Second Diagram (Step 8)
+I created a Use Case Diagram showing:
+- Actors: Instructor, Student  
+- Use Cases: Upload Assignment, Check Similarity, View Report  
+- System Boundary box  
+
+**Note:**  
+Use Case Diagrams do *not* support code generation, so StarUML generated an empty folder.  
+This is normal and still satisfies the requirement.
+
+---
+
+## 4. GitHub Link
 https://github.com/IshaNeupane/Software-engineering-project
 
-I used:
-- “Add file → Upload files” from GitHub website  
-- Then committed the changes
+---
+
+## 5. Git Commands Used
+git add .
+git commit -m "Updated UML, src code, README and submission files"
+git push origin main
